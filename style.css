@@ -1,0 +1,25 @@
+		body{
+			margin: 0;
+		}
+		.navbar{
+			list-style: none; 
+			margin: 0; 
+			padding: 0;
+			background-color: #23475f;
+			text-align: center;
+		}
+		.navbar li{
+			display: inline-block; 
+		}
+		.navbar a{
+			display: block; 
+			padding: 10px 20px;
+			text-decoration: none; 
+			font-size: 80px;
+			color: #fff;
+			line-height: 50px;
+			transition-duration: .3s; 
+		}
+		.novbar a:hover{
+			background-color: #00d1b1; 
+		}
