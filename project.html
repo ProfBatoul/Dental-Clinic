@@ -1,6 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<title> DENTAL CLINIC </title>
+</head>
+<body>
+<header>
+   <a class="logo" href="C:\Users\tasne\Documents\GitHub\Dental-Clinic\project.html"> <img src="images/logo.jpg"></a>
+   <nav>
+	<ul class="navbar">
+		<li><a href="C:\Users\tasne\Documents\GitHub\Dental-Clinic\project.html">HOME</a></li>
+		<li><a href="C:\Users\tasne\Documents\GitHub\Dental-Clinic\page2.html">ABOUT</a></li>
+		<li><a href="#services">SERVICES</a></li>
+		<li><a href="#">OFFERS</a></li>
+		<li><a href="#">OUR CLIENT</a></li>
+		<li><a href="C:\Users\tasne\Documents\GitHub\Dental-Clinic\page3.html">CONNECT US</a></li>
+	</ul>
+   </nav>
+</header>
+  <h1> Our Dental Clinic Midecal Care,Welcome </h1>
+  <p> Exceptional care for all ages </p>
+  <img  id="services" name = slide >
+ <!-- <div>
+     <div><img class="slide" name="slide" src="images/slide1.jpg"></div>
+     <div><img class="slide" name="slide" src="images/slide2.jpg"></div>
+     <div><img class="slide" name="slide" src="images/slide3.jpg"></div>
+     <div><img class="slide" name="slide" src="images/slide4.jpg"></div>
+  </div>-->
+  <script>
+    var i = 0;
+	var images = [];
+	var time = 3000;
+	images[0] = "images/slide1.jpg";
+	images[1] = "images/slide2.jpg";
+	images[2] = "images/slide3.jpg";
+	images[3] = "images/slide4.jpg";
+
+	function changeImg(){
+		document.slide.src = images[i];
+
+		if( i < images.length - 1){
+          i++;
+		} else {
+          i = 0;
+		}
+
+		setTimeout("changeImg()", time);
+	}
+
+	window.onload = changeImg;
+  </script>
+=======
 	<meta.charset="UTF-8"/>
 	<title> DENTAL CLINIC </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
